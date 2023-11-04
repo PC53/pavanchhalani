@@ -1,6 +1,6 @@
 import React from "react";
 import { useTheme } from "next-themes";
-import data from "../../data/portfolio.json";
+import data from "../../data/portfolio.js";
 
 const Button = ({ children, type, onClick, classes }) => {
   const { theme } = useTheme();

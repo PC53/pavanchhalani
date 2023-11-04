@@ -1,3 +1,10 @@
+import handSignIcon from '../icons/handSignIcon.png'
+import marketMood from '../icons/marketMood.jpg'
+import sortingVisualiser from '../icons/sortingVisualiser.png'
+import sdp from '../icons/sdp.png'
+
+
+const data =
 {
     "name":"Pavan",
     "headerTaglineOne":"Hello 👋",
@@ -32,7 +39,7 @@
        {
           "id":"5",
           "title":"Email",
-          "link":"mailto:contact@pavanchhalani.xyz"
+          "link":"mailto:chhalanipavan@gmail.com"
        }
     ],
     "projects":[
@@ -47,21 +54,21 @@
           "id":"2",
           "title":"MarketMood",
           "description":"Sentiment-Driven Stock Forecaster",
-          "imageSrc":"../icons/marketMood.png",
+          "imageSrc":{marketMood},
           "url":"https://github.com/PC53/NewsBased-Market-Predictor"
        },
        {
           "id":"3",
           "title":"Sorting Algorithm Visualiser",
           "description":"Helping learners grasp sorting algorithms",
-          "imageSrc":"../icons/sortingVisualiser.png",
+          "imageSrc":{sortingVisualiser},
           "url":"https://github.com/PC53/Sorting-Visualiser"
        },
        {
           "id":"4",
           "title":"System Design Project",
           "description":"Mobile Alarm Clock",
-          "imageSrc":"../icons/sdp.png",
+          "imageSrc":{sdp},
           "url":"https://github.com/SDP23Group3"
        }
     ],
@@ -109,3 +116,6 @@
        ]
     }
  }
+
+
+export default data;
