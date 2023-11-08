@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../Button";
 
-import data from "../../data/portfolio.js";
+import data from "../../data/portfolio.json";
 
 const Socials = ({ className }) => {
   return (
