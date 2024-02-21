@@ -11,7 +11,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  const { name, showBlog, showResume, socials } = data;
+  const { name, showRandom, showResume, socials } = data;
 
   useEffect(() => {
     setMounted(true);
@@ -71,8 +71,8 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 <div className="grid grid-cols-1">
                   <Button onClick={handleWorkScroll}>Work</Button>
                   <Button onClick={handleAboutScroll}>About</Button>
-                  {showBlog && (
-                    <Button onClick={() => router.push("/blog")}>Blog</Button>
+                  {showRandom && (
+                    <Button onClick={() => router.push("/blog")}>Random</Button>
                   )}
                   {showResume && (
                     <Button
@@ -95,8 +95,8 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   <Button onClick={() => router.push("/")} classes="first:ml-1">
                     Home
                   </Button>
-                  {showBlog && (
-                    <Button onClick={() => router.push("/blog")}>Blog</Button>
+                  {showRandom && (
+                    <Button onClick={() => router.push("/multi")}>Random</Button>
                   )}
                   {showResume && (
                     <Button
@@ -133,8 +133,8 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
           <div className="flex">
             <Button onClick={handleWorkScroll}>Work</Button>
             <Button onClick={handleAboutScroll}>About</Button>
-            {showBlog && (
-              <Button onClick={() => router.push("/blog")}>Blog</Button>
+            {showRandom && (
+              <Button onClick={() => router.push("/blog")}>Random</Button>
             )}
             {showResume && (
               <Button
@@ -162,8 +162,8 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         ) : (
           <div className="flex">
             <Button onClick={() => router.push("/")}>Home</Button>
-            {showBlog && (
-              <Button onClick={() => router.push("/blog")}>Blog</Button>
+            {showRandom && (
+              <Button onClick={() => router.push("/blog")}>Random</Button>
             )}
             {showResume && (
               <Button
