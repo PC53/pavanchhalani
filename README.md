@@ -1,4 +1,4 @@
-### Live - www.pavanchhalani.xyz 
+### Live - www.pavanchhalani.com
 
 ### Features - 
 
