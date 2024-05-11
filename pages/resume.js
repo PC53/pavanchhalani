@@ -49,7 +49,7 @@ const Resume = () => {
                 <Socials />
               </div>
               <div className="w-full max-w-3xl rounded-md">
-                <embed src="resume/resume_new.pdf" type="application/pdf" className="w-full md:h-144" width="100%" height="1000px" />
+                <embed src="resume/Pavan-Chhalani-2-5.pdf" type="application/pdf" className="w-full md:h-144" width="100%" height="1000px" />
               </div>
               
             </div>
