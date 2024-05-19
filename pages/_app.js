@@ -4,10 +4,12 @@ import GoogleAnalytics from '../components/GoogleAnalytics/';
 
 const App = ({ Component, pageProps }) => {
   return (
-    <ThemeProvider>
+    <>
       <GoogleAnalytics />
-      <Component {...pageProps} />
-    </ThemeProvider>
+      <ThemeProvider>
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </>
   );
 };
 
